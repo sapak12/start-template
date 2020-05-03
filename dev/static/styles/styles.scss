@@ -1,0 +1,156 @@
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/libs";
+@import "utils/sprite";
+//@include sprites($spritesheet-sprites);
+
+*::-webkit-input-placeholder,
+*:-moz-placeholder,
+*::-moz-placeholder,
+*:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: $secondary-color;
+  opacity: 1;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: $accent;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666666;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  font-family: $default-font;
+  color: $text-main-color;
+  font-style: normal;
+  background-color: $white;
+  opacity: 1;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: $content;
+  margin: 0 auto;
+}
+
+
+//Модули
+@import "modules/modules";

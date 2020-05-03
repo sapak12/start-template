@@ -1,0 +1,4 @@
+@import "font-face";
+@include font-face("Open Sans", "../fonts/opensans/opensans/opensans", 400, "normal");
+@include font-face("Open Sans", "../fonts/opensans/opensanslight/opensanslight", 300, "normal");
+@include font-face("Open Sans", "../fonts/opensans/opensanssemibold/opensanssemibold", 600, "normal");
